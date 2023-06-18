@@ -52,8 +52,8 @@ export const Button = ({
     size === "small"
       ? "py-2 px-3 text-sm"
       : size === "medium"
-      ? "py-3 px-4 text-base"
-      : "py-4 px-5 text-xl";
+      ? "py-2.5 px-3.5 text-base"
+      : "py-3.5 px-4 text-xl";
 
   return (
     <button
