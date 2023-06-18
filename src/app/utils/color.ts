@@ -1,31 +1,27 @@
 export enum Color {
-  LEMON = "lemon",
-  GRAPE = "grape",
-  FUSCHIA = "fuschia",
-  BLUE = "blue",
   LIGHT_GRAY = "lightGray",
+  GREEN = "green",
+  LIGHT_GREEN = "lightGreen",
+  BLACK = "black",
 }
 
 export const bgColorMap: Record<Color, string> = {
-  lemon: "bg-lemon",
-  grape: "bg-grape",
-  fuschia: "bg-fuschia",
-  blue: "bg-blue",
-  lightGray: "bg-light-gray",
+  lightGray: "bg-lightGray",
+  green: "bg-green",
+  lightGreen: "bg-lightGreen",
+  black: "bg-black",
 };
 
 export const textColorMap: Record<Color, string> = {
-  lemon: "text-lemon",
-  grape: "text-grape",
-  fuschia: "text-fuschia",
-  blue: "text-blue",
-  lightGray: "text-light-gray",
+  lightGray: "text-lightGray",
+  green: "text-green",
+  lightGreen: "text-lightGreen",
+  black: "text-black",
 };
 
 export const borderColorMap: Record<Color, string> = {
-  lemon: "border-lemon",
-  grape: "border-grape",
-  fuschia: "border-fuschia",
-  blue: "border-blue",
-  lightGray: "border-light-gray",
+  lightGray: "border-lightGray",
+  green: "border-green",
+  lightGreen: "border-lightGreen",
+  black: "border-black",
 };

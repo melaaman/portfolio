@@ -4,12 +4,9 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     colors: {
-      lemon: "rgb(var(--color-lemon) / <alpha-value>)",
-      grape: "rgb(var(--color-grape) / <alpha-value>)",
-      fuschia: "rgb(var(--color-fuschia) / <alpha-value>)",
-      blue: "rgb(var(--color-blue) / <alpha-value>)",
       lightGray: "rgb(var(--color-light-gray) / <alpha-value>)",
-      cream: "rgb(var(--color-cream) / <alpha-value>)",
+      green: "rgb(var(--color-green) / <alpha-value>)",
+      lightGreen: "rgb(var(--color-light-green) / <alpha-value>)",
       black: "black",
       white: "white",
       red: {
@@ -21,7 +18,7 @@ module.exports = {
     },
     extend: {
       borderWidth: {
-        1: "1.5px",
+        1: "1px",
       },
       minWidth: {
         0: "0",

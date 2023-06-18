@@ -39,10 +39,10 @@ export const ButtonColors: Story = (args: {
 }) => {
   return (
     <div className="flex gap-4">
-      <Button label="Click me!" color={Color.BLUE} {...args} />
-      <Button label="Click me!" color={Color.LEMON} {...args} />
-      <Button label="Click me!" color={Color.FUSCHIA} {...args} />
-      <Button label="Click me!" color={Color.GRAPE} {...args} />
+      <Button label="Click me!" color={Color.GREEN} {...args} />
+      <Button label="Click me!" color={Color.LIGHT_GREEN} {...args} />
+      <Button label="Click me!" color={Color.LIGHT_GRAY} {...args} />
+      <Button label="Click me!" color={Color.BLACK} {...args} />
     </div>
   );
 };
@@ -55,7 +55,14 @@ ButtonColors.argTypes = {
 
 export const Outlined: Story = {
   args: {
-    outlined: true,
+    variant: "outlined",
+    label: LABEL_TEXT,
+  },
+};
+
+export const Text: Story = {
+  args: {
+    variant: "text",
     label: LABEL_TEXT,
   },
 };
@@ -78,7 +85,7 @@ export const ButtonSet: Story = (args: { color: Color; size?: Size }) => {
   return (
     <div className="flex gap-4">
       <Button label="OK" {...args} />
-      <Button outlined label="Cancel" {...args} />
+      <Button variant="outlined" label="Cancel" {...args} />
     </div>
   );
 };
@@ -86,6 +93,6 @@ export const ButtonSet: Story = (args: { color: Color; size?: Size }) => {
 ButtonSet.storyName = "Button set";
 ButtonSet.argTypes = {
   label: { table: { disable: true } },
-  outlined: { table: { disable: true } },
+  variant: { table: { disable: true } },
   onClick: { table: { disable: true } },
 };

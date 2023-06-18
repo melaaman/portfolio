@@ -7,11 +7,13 @@ import {
 
 export type Size = "small" | "medium" | "large";
 
+type Variant = "outlined" | "filled" | "text";
+
 export interface ButtonProps {
   /**
    * Is this the principal call to action on the page?
    */
-  outlined?: boolean;
+  variant?: Variant;
   /**
    * What color to use
    */
@@ -34,9 +36,9 @@ export interface ButtonProps {
  * Primary UI component for user interaction
  */
 export const Button = ({
-  outlined = false,
+  variant = "filled",
   size = "medium",
-  color = Color.BLUE,
+  color = Color.GREEN,
   label,
   ...props
 }: ButtonProps) => {
@@ -44,11 +46,18 @@ export const Button = ({
   const textColor = textColorMap[color];
   const borderColor = borderColorMap[color];
 
-  const mode = outlined
-    ? `bg-white ${textColor} border ${borderColor}`
-    : `${backgroundColor} text-white`;
+  const variantSettings =
+    variant === "outlined"
+      ? `bg-white ${textColor} border-1 ${borderColor}`
+      : variant === "filled"
+      ? `${backgroundColor} ${
+          color === Color.GREEN || color === Color.BLACK
+            ? "text-white"
+            : "text-black"
+        }`
+      : `bg-white ${textColor}`;
 
-  const variant =
+  const sizeSettings =
     size === "small"
       ? "py-2 px-3 text-sm"
       : size === "medium"
@@ -58,7 +67,7 @@ export const Button = ({
   return (
     <button
       type="button"
-      className={`tracking-wider font-medium min-w-6 rounded ${mode} ${variant}`}
+      className={`tracking-wider font-semibold min-w-6 ${variantSettings} ${sizeSettings}`}
       {...props}
     >
       {label.toUpperCase()}

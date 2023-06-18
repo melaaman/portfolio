@@ -6,13 +6,9 @@
 
 :root {
   /* App colors */
-  --color-lemon: 215 221 53;
-  --color-grape: 87 93 169;
-  --color-fuschia: 228 45 159;
-  --color-blue: 2 85 139;
-  --color-light-gray: 247 241 237;
-
-  --color-cream: 249 247 241;
+  --color-light-gray: 245 245 245;
+  --color-green: 77 114 77;
+  --color-light-green: 141 180 142;
 
   --app-font: "Hahmlet", sans-serif;
 }
