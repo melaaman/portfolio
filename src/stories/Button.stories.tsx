@@ -41,7 +41,6 @@ export const ButtonColors: Story = (args: {
     <div className="flex gap-4">
       <Button label="Click me!" color={Color.GREEN} {...args} />
       <Button label="Click me!" color={Color.LIGHT_GREEN} {...args} />
-      <Button label="Click me!" color={Color.LIGHT_GRAY} {...args} />
       <Button label="Click me!" color={Color.BLACK} {...args} />
     </div>
   );
