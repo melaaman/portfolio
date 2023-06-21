@@ -1,5 +1,29 @@
+import { HomeIcon } from "./../app/icons/HomeIcon";
+import { WomanIcon } from "./../app/icons/WomanIcon";
 import { Menu } from "./../app/components/menu/Menu";
+import { BookIcon } from "./../app/icons/BookIcon";
 import type { Meta, StoryObj } from "@storybook/react";
+import { Color } from "./../app/utils/color";
+import { ContactIcon } from "./../app/icons/ContactIcon";
+
+const menuItems = [
+  {
+    label: "Page 1",
+    Icon: <HomeIcon stroke={Color.LIGHT_GREEN} />,
+  },
+  {
+    label: "Page 2",
+    Icon: <WomanIcon fill={Color.LIGHT_GREEN} />,
+  },
+  {
+    label: "Page 3",
+    Icon: <ContactIcon stroke={Color.LIGHT_GREEN} />,
+  },
+  {
+    label: "Page 4",
+    Icon: <BookIcon stroke={Color.LIGHT_GREEN} />,
+  },
+];
 
 const styles = {
   transform: "scale(1)",
@@ -17,10 +41,15 @@ const meta: Meta<typeof Menu> = {
 export default meta;
 type Story = StoryObj<typeof Menu>;
 
-export const Right: Story = {};
+export const Right: Story = {
+  args: {
+    menuItems,
+  },
+};
 
 export const Left: Story = {
   args: {
     left: true,
+    menuItems,
   },
 };

@@ -24,7 +24,10 @@ module.exports = {
         0: "0",
         6: "6rem",
       },
+      spacing: {
+        18: "4.5rem",
+      },
     },
   },
-  plugins: [require("tailwindcss-animated")],
+  plugins: [],
 };

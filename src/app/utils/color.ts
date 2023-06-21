@@ -21,3 +21,15 @@ export const borderColorMap: Record<Color, string> = {
   lightGreen: "border-lightGreen",
   black: "border-black",
 };
+
+export const fillColorMap: Record<Color, string> = {
+  green: "fill-green",
+  lightGreen: "fill-lightGreen",
+  black: "fill-black",
+};
+
+export const strokeColorMap: Record<Color, string> = {
+  green: "stroke-green",
+  lightGreen: "stroke-lightGreen",
+  black: "stroke-black",
+};
