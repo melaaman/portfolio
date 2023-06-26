@@ -11,6 +11,7 @@ export default function Home() {
           height="0"
           sizes="100vw"
           className="w-full md:w-5/6 lg:w-2/3 xl:w-1/2 h-auto"
+          priority
         />
       </div>
     </main>

@@ -31,9 +31,5 @@ const menuItems = [
 ];
 
 export const NavBar = () => {
-  return (
-    <div>
-      <Menu menuItems={menuItems} />
-    </div>
-  );
+  return <Menu menuItems={menuItems} />;
 };
