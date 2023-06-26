@@ -27,6 +27,9 @@ module.exports = {
       spacing: {
         18: "4.5rem",
       },
+      opacity: {
+        85: ".85",
+      },
     },
   },
   plugins: [],

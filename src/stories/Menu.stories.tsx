@@ -8,26 +8,25 @@ import { ContactIcon } from "./../app/icons/ContactIcon";
 
 const menuItems = [
   {
+    href: "/",
     label: "Page 1",
-    Icon: <HomeIcon stroke={Color.LIGHT_GREEN} />,
+    Icon: <HomeIcon stroke={Color.WHITE} />,
   },
   {
+    href: "/",
     label: "Page 2",
-    Icon: <WomanIcon fill={Color.LIGHT_GREEN} />,
+    Icon: <WomanIcon fill={Color.WHITE} />,
   },
   {
+    href: "/",
     label: "Page 3",
-    Icon: <ContactIcon stroke={Color.LIGHT_GREEN} />,
-  },
-  {
-    label: "Page 4",
-    Icon: <BookIcon stroke={Color.LIGHT_GREEN} />,
+    Icon: <ContactIcon stroke={Color.WHITE} />,
   },
 ];
 
 const styles = {
   transform: "scale(1)",
-  height: "15em",
+  height: "10em",
 };
 
 const meta: Meta<typeof Menu> = {

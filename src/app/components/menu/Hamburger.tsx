@@ -7,7 +7,9 @@ export const HamburgerMenu = ({
   onClick,
   isOpen,
 }: HamburgerMenuProps): JSX.Element => {
-  const genericHamburgerLine = `h-0.5 w-8 my-1 bg-green rounded-full transition ease transform duration-500`;
+  const genericHamburgerLine = `h-0.5 w-8 my-1 bg-${
+    isOpen ? "white" : "green"
+  } rounded-full transition ease transform duration-500`;
 
   return (
     <button className="Hamburger h-12 w-12" onClick={onClick}>
