@@ -10,7 +10,7 @@ export const MenuItem = ({ href, label, Icon }: MenuItemProps) => {
   return (
     <Link
       href={href}
-      className="MenuItem flex justify-center items-center p-2 font-semibold gap-6"
+      className="MenuItem flex justify-center items-center p-1 md:p-2 font-semibold gap-6"
     >
       <div className="MenuItem-icon">{Icon}</div>
       <div
