@@ -10,13 +10,13 @@ export const MenuItem = ({ href, label, Icon }: MenuItemProps) => {
   return (
     <Link
       href={href}
-      className="MenuItem flex justify-center items-center p-1 md:p-2 font-semibold gap-6"
+      className="MenuItem flex justify-between items-center p-1 md:p-2 font-semibold gap-4 md:gap-24"
     >
       <div className="MenuItem-icon">{Icon}</div>
       <div
         className={`MenuItem-label opacity-100 text-white text-xl md:text-2xl tracking-widest`}
       >
-        {label.toUpperCase()}
+        {`_${label.toLowerCase()}_`}
       </div>
     </Link>
   );

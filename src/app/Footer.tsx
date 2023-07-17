@@ -4,7 +4,7 @@ const ICON_SIZE = 28;
 
 export const Footer = () => {
   return (
-    <div className="fixed bottom-6 w-full flex justify-center gap-4">
+    <div className="fixed bottom-0 bg-white py-2 w-full flex justify-center gap-4">
       <a href="https://github.com/melaaman" target="_blank">
         <FaGithub size={ICON_SIZE} />
       </a>

@@ -14,10 +14,10 @@ export const Menu = ({ left = false, menuItems }: MenuProps) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="Menu">
+    <div className="Menu absolute z-10 top-0">
       <div
-        className={`Menu-hambuger fixed z-20 top-4 ${
-          left ? "left-4" : "right-4"
+        className={`Menu-hambuger fixed z-20 top-8 ${
+          left ? "left-8" : "right-8"
         }`}
       >
         <HamburgerMenu

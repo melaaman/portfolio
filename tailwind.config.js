@@ -7,6 +7,7 @@ module.exports = {
       lightGray: "rgb(var(--color-light-gray) / <alpha-value>)",
       green: "rgb(var(--color-green) / <alpha-value>)",
       lightGreen: "rgb(var(--color-light-green) / <alpha-value>)",
+      lightPink: "rgb(var(--color-light-pink) / <alpha-value>)",
       black: "black",
       white: "white",
       red: {
@@ -29,6 +30,9 @@ module.exports = {
       },
       opacity: {
         85: ".85",
+      },
+      letterSpacing: {
+        widest: ".25em",
       },
     },
   },
