@@ -18,8 +18,8 @@ export default function RootLayout({
         <NavBar />
         <main className="Main flex min-h-screen m-2 md:m-4 p-10 pt-20 bg-lightGray">
           {children}
-          <Footer />
         </main>
+        <Footer />
       </body>
     </html>
   );
