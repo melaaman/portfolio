@@ -1,9 +1,10 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { HamburgerMenu } from "./Hamburger";
 import { MenuItem, MenuItemProps } from "./MenuItem";
 import { Transition } from "@headlessui/react";
+import { usePathname } from "next/navigation";
 
 interface MenuProps {
   left?: boolean;
@@ -11,7 +12,12 @@ interface MenuProps {
 }
 
 export const Menu = ({ left = false, menuItems }: MenuProps) => {
+  const pathname = usePathname();
   const [isOpen, setIsOpen] = useState(false);
+
+  useEffect(() => {
+    setIsOpen(false);
+  }, [pathname]);
 
   return (
     <div className="Menu absolute z-10 top-0">
