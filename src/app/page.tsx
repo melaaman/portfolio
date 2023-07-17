@@ -6,21 +6,19 @@ const infoText =
 
 export default function Home() {
   return (
-    <main className="Main flex min-h-screen m-2 md:m-4 p-10 pt-20 bg-lightGray">
-      <div className="Main-content container flex flex-col items-center gap-10 md:gap-4">
-        <Image
-          src="/assets/logo_tekstilla.png"
-          alt="logo"
-          width="0"
-          height="0"
-          sizes="100vw"
-          className="Main-content-image w-full md:w-5/6 lg:w-2/3 xl:w-1/2"
-          priority
-        />
-        <div className="Main-content-info">
-          <ImageFrame file="myImage.jpg" alt="my image" />
-        </div>
+    <div className="Main-content container flex flex-col items-center gap-10 md:gap-4">
+      <Image
+        src="/assets/logo_tekstilla.png"
+        alt="logo"
+        width="0"
+        height="0"
+        sizes="100vw"
+        className="Main-content-image w-full md:w-5/6 lg:w-2/3 xl:w-1/2"
+        priority
+      />
+      <div className="Main-content-info">
+        <ImageFrame file="myImage.jpg" alt="my image" />
       </div>
-    </main>
+    </div>
   );
 }

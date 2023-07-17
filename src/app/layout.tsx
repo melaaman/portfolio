@@ -16,8 +16,10 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <NavBar />
-        {children}
-        <Footer />
+        <main className="Main flex min-h-screen m-2 md:m-4 p-10 pt-20 bg-lightGray">
+          {children}
+          <Footer />
+        </main>
       </body>
     </html>
   );
