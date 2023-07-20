@@ -41,7 +41,7 @@ export const Menu = ({ left = false, menuItems }: MenuProps) => {
         leaveFrom="opacity-85"
         leaveTo="opacity-0"
       >
-        <div className={`Menu-items-list flex flex-col gap-1`}>
+        <div className={`Menu-items-list flex flex-col gap-3`}>
           {menuItems.map((item, index) => {
             return (
               <MenuItem

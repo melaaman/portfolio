@@ -10,7 +10,7 @@ interface ImageFrameProps {
 export const ImageFrame = ({ file, alt, width, height }: ImageFrameProps) => {
   return (
     <div className="ImageFrame flex items-center">
-      <div className="ImageFrame-image border-1 border-lightPink p-1">
+      <div className="ImageFrame-image p-1">
         <Image
           src={`/assets/${file}`}
           alt={alt}
