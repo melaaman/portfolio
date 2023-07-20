@@ -8,15 +8,11 @@ export interface MenuItemProps {
 
 export const MenuItem = ({ href, label, Icon }: MenuItemProps) => {
   return (
-    <Link
-      href={href}
-      className="MenuItem flex justify-between items-center p-1 md:p-2 font-semibold gap-4 md:gap-24"
-    >
-      <div className="MenuItem-icon">{Icon}</div>
+    <Link href={href} className="MenuItem flex justify-center p-1 md:p-2">
       <div
-        className={`MenuItem-label opacity-100 text-white text-xl md:text-2xl tracking-widest`}
+        className={`MenuItem-label font-appRetro opacity-100 text-white text-xl md:text-2xl tracking-widest`}
       >
-        {`_${label.toLowerCase()}_`}
+        {label.toLowerCase()}
       </div>
     </Link>
   );

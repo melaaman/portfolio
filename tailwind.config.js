@@ -18,6 +18,10 @@ module.exports = {
       },
     },
     extend: {
+      fontFamily: {
+        appFont: ["var(--app-font)"],
+        appRetro: ["var(--app-font-retro)"],
+      },
       borderWidth: {
         1: "1px",
       },

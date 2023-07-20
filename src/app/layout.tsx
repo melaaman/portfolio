@@ -16,7 +16,7 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <NavBar />
-        <main className="Main flex min-h-screen m-2 md:m-4 p-10 pt-20 bg-lightGray">
+        <main className="Main flex justify-center min-h-screen m-2 md:m-4 p-10 pt-20 bg-lightGray">
           {children}
         </main>
         <Footer />

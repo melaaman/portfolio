@@ -6,9 +6,9 @@ const infoText =
 
 export default function Home() {
   return (
-    <div className="Main-content container flex flex-col items-center gap-10 md:gap-4">
+    <div className="Main-content container flex flex-col items-center gap-10">
       <Image
-        src="/assets/logo_tekstilla.png"
+        src="/assets/logo_retro.png"
         alt="logo"
         width="0"
         height="0"
