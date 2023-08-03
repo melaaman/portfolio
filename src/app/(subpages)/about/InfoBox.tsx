@@ -6,10 +6,10 @@ export const InfoBox = ({ item }: { item: InfoBoxItem }) => {
     <div className="InfoBox flex gap-5 mb-5 mx-10">
       <img
         className="InfoBox-image"
-        src={item.image.fields.file.url}
+        src={item.image.fields?.file?.url}
         alt={"something"}
         width={150}
-        height={150}
+        height={100}
       />
       <p className="InfoBox-description">{item.description}</p>
     </div>
