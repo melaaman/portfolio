@@ -7,7 +7,7 @@ export const InfoBox = ({ item }: { item: InfoBoxItem }) => {
       <img
         className="InfoBox-image"
         src={item.image.fields?.file?.url}
-        alt={"something"}
+        alt={`image-${item.order}`}
         width={150}
         height={100}
       />

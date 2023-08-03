@@ -48,7 +48,6 @@ export const Menu = ({ left = false, menuItems }: MenuProps) => {
                 key={`${item.label}-${index}`}
                 href={item.href}
                 label={item.label}
-                Icon={item.Icon}
               />
             );
           })}

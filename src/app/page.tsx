@@ -1,9 +1,6 @@
 import Image from "next/image";
 import { ImageFrame } from "./components/ImageFrame";
 
-const infoText =
-  "Olen frontendiin erikoistunut ohjelmistokehittäjä pääkaupunkiseudulta. Suosikkiteknologioitani ovat React, TypeScript ja ylipäänsä JavaScript-pohjaiset webbityökalut. Fullstack-kehittäjänä backend-puolikaan ei ole minulle vieras. Kokemuksestani lisätietoa täältä. Olen entiseltä ammatiltani kirjallisuudentutkija, mistä on säilynyt mieltymys kirjoittamiseen. Toivonkin, että voisin tulevaisuudessa yhdistää nämä kaksi taitoa, ohjelmoinnin ja kirjoittamisen. Ohjelmointiin liittyviä tekstejä voi lukea täältä.";
-
 export default function Home() {
   return (
     <div className="Main-content container flex flex-col items-center gap-10">

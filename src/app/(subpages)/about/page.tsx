@@ -3,7 +3,7 @@ import { InfoBoxList } from "./InfoBoxList";
 
 export default function About() {
   return (
-    <div>
+    <div className="About">
       <Header title="Minusta" />
       <InfoBoxList />
     </div>
