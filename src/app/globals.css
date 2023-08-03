@@ -2,9 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
-
 :root {
   /* App colors */
   --color-light-gray: 245 245 245;
@@ -12,20 +9,32 @@
   --color-light-green: 141 180 142;
   --color-light-pink: 242 219 231;
 
-  --app-font: "Open Sans", sans-serif;
-  --app-font-retro: "Press Start 2P", cursive;
+  --color-gold: 255 215 0;
 }
 
 body {
   margin: 0;
-  font-family: var(--app-font);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-family: var(--font-main);
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+h1 {
+  font-family: var(--font-retro);
+  font-size: xx-large;
+}
+
+p {
+  font-size: large;
+}
+
+.retro-font {
+  font-family: var(--font-retro);
 }
 
 @layer utilities {

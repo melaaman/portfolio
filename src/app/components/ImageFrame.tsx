@@ -16,7 +16,7 @@ export const ImageFrame = ({ file, alt, width, height }: ImageFrameProps) => {
           alt={alt}
           width={width || 200}
           height={height || 200}
-          className="border-1 border-lightPink m-2 p-3"
+          className="border-1 border-gold rounded-1/2 m-2 p-3"
           priority
         />
       </div>

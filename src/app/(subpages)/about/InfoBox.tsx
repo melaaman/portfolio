@@ -3,7 +3,7 @@ import { InfoBoxItem } from "./types";
 
 export const InfoBox = ({ item }: { item: InfoBoxItem }) => {
   return (
-    <div className="InfoBox flex">
+    <div className="InfoBox flex gap-5 mb-5 mx-10">
       <img
         className="InfoBox-image"
         src={item.image.fields.file.url}
@@ -11,7 +11,7 @@ export const InfoBox = ({ item }: { item: InfoBoxItem }) => {
         width={150}
         height={150}
       />
-      <div className="InfoBox-description">{item.description}</div>
+      <p className="InfoBox-description">{item.description}</p>
     </div>
   );
 };

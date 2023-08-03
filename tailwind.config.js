@@ -8,6 +8,7 @@ module.exports = {
       green: "rgb(var(--color-green) / <alpha-value>)",
       lightGreen: "rgb(var(--color-light-green) / <alpha-value>)",
       lightPink: "rgb(var(--color-light-pink) / <alpha-value>)",
+      gold: "rgb(var(--color-gold) / <alpha-value>)",
       black: "black",
       white: "white",
       red: {
@@ -18,10 +19,7 @@ module.exports = {
       },
     },
     extend: {
-      fontFamily: {
-        appFont: ["var(--app-font)"],
-        appRetro: ["var(--app-font-retro)"],
-      },
+      fontFamily: {},
       borderWidth: {
         1: "1px",
       },
@@ -37,6 +35,9 @@ module.exports = {
       },
       letterSpacing: {
         widest: ".25em",
+      },
+      borderRadius: {
+        "1/2": "50%",
       },
     },
   },
