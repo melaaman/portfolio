@@ -7,7 +7,7 @@ export const InfoBoxList = async () => {
   const items = await getData<InfoBoxItem>("portfolioInfoBox");
 
   return (
-    <div className="InfoBoxList">
+    <div className="InfoBoxList flex flex-col gap-5">
       {sortByOrder(items).map((item, index) => (
         <InfoBox key={index} item={item} />
       ))}
