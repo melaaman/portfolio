@@ -14,7 +14,7 @@ export default function Home() {
         priority
       />
       <div className="Main-content-info">
-        <ImageFrame file="myImage.jpg" alt="my image" />
+        <ImageFrame file="myImageSmall.jpg" alt="my image" />
       </div>
     </div>
   );
