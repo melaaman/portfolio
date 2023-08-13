@@ -8,7 +8,7 @@ export default async function Texts() {
   const items = await getData<PublicationList>("publicationList");
   return (
     <div className="Texts">
-      <Header title="Tekstejä" />
+      <Header title="Bibliografia" />
       <div className="Texts-list grid md:grid-rows-3 md:grid-cols-2 gap-6">
         {sortByOrder(items).map((item) => {
           return <ListBox key={item.title} item={item} />;

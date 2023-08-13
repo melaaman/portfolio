@@ -19,7 +19,7 @@ const menuItems = [
   },
   {
     href: "/texts",
-    label: "Tekstejä",
+    label: "Bibliografia",
     Icon: <BookIcon stroke={iconColor} />,
   },
 ];
