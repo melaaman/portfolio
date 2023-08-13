@@ -1,18 +1,18 @@
 import Image from "next/image";
 
 interface ImageFrameProps {
-  file: string;
+  src: string;
   alt: string;
   width?: number;
   height?: number;
 }
 
-export const ImageFrame = ({ file, alt, width, height }: ImageFrameProps) => {
+export const ImageFrame = ({ src, alt, width, height }: ImageFrameProps) => {
   return (
     <div className="ImageFrame flex items-center">
       <div className="ImageFrame-image p-1">
         <Image
-          src={`/assets/${file}`}
+          src={src}
           alt={alt}
           width={width || 200}
           height={height || 200}

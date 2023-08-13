@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <div className="Main-content container flex flex-col items-center gap-10">
       <Image
-        src="/assets/logo_retro.png"
+        src="/logo_retro.png"
         alt="logo"
         width="0"
         height="0"
@@ -14,7 +14,7 @@ export default function Home() {
         priority
       />
       <div className="Main-content-info">
-        <ImageFrame file="myImageSmall.jpg" alt="my image" />
+        <ImageFrame src="/myImageSmall.jpg" alt="my image" />
       </div>
     </div>
   );
