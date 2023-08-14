@@ -14,9 +14,10 @@ export const ImageFrame = ({ src, alt, width, height }: ImageFrameProps) => {
         <Image
           src={src}
           alt={alt}
-          width={width || 200}
-          height={height || 200}
-          className="border-1 border-gold rounded-1/2 m-2 p-3"
+          height={height ?? 200}
+          width={width ?? 200}
+          sizes="198px"
+          className="border-1 border-gold rounded-1/2 m-2 p-3 w-full h-auto"
           priority
         />
       </div>

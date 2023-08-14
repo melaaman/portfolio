@@ -9,8 +9,8 @@ export default function Home() {
         alt="logo"
         width="0"
         height="0"
-        sizes="100vw"
-        className="Main-content-image w-full md:w-5/6 lg:w-2/3 xl:w-1/2"
+        sizes="(min-width: 1960px) 768px, (min-width: 1540px) calc(13.5vw + 506px), (min-width: 1280px) calc(23.33vw + 285px), (min-width: 1100px) calc(15vw + 494px), (min-width: 960px) calc(4.17vw + 600px), (min-width: 780px) calc(51.88vw + 152px), (min-width: 740px) 640px, calc(94.29vw - 39px)"
+        className="Main-content-image w-full md:w-5/6 lg:w-2/3 xl:w-1/2 h-auto"
         priority
       />
       <div className="Main-content-info">
