@@ -1,4 +1,3 @@
-/* eslint-disable @next/next/no-img-element */
 import { InfoBoxItem } from "./types";
 import Image from "next/image";
 
