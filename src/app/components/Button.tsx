@@ -46,7 +46,7 @@ export const Button = ({
   const textColor = textColorMap[color];
   const borderColor = borderColorMap[color];
 
-  const variantSettings =
+  const variantStyles =
     variant === "outlined"
       ? `bg-white ${textColor} border-1 ${borderColor}`
       : variant === "filled"
@@ -57,7 +57,7 @@ export const Button = ({
         }`
       : `bg-white ${textColor}`;
 
-  const sizeSettings =
+  const sizeStyles =
     size === "small"
       ? "py-2 px-3 text-sm"
       : size === "medium"
@@ -67,7 +67,7 @@ export const Button = ({
   return (
     <button
       type="button"
-      className={`tracking-wider font-semibold min-w-6 ${variantSettings} ${sizeSettings}`}
+      className={`tracking-wider font-semibold min-w-6 ${variantStyles} ${sizeStyles}`}
       {...props}
     >
       {label.toUpperCase()}
