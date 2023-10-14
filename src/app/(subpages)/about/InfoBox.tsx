@@ -1,5 +1,5 @@
-import { InfoBoxItem } from "./types";
 import Image from "next/image";
+import { InfoBoxItem } from "./types";
 
 export const InfoBox = ({ item }: { item: InfoBoxItem }) => {
   return (
@@ -11,6 +11,7 @@ export const InfoBox = ({ item }: { item: InfoBoxItem }) => {
         width={150}
         height={100}
         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+        loading="eager"
       />
       <p className="InfoBox-description">{item.description}</p>
     </div>

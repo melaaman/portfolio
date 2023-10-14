@@ -18,7 +18,7 @@ export const ImageFrame = ({ src, alt, width, height }: ImageFrameProps) => {
           width={width ?? 200}
           sizes="198px"
           className="border-1 border-gold rounded-1/2 m-2 p-3 w-full h-auto"
-          priority
+          loading="eager"
         />
       </div>
     </div>
