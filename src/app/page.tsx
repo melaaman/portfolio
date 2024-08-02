@@ -1,10 +1,9 @@
-import Image from "next/image";
 import { ImageFrame } from "./components/ImageFrame";
 
 export default function Home() {
   return (
     <div className="Main-content container flex flex-col items-center gap-10">
-      <Image
+      {/* <Image
         src="/logo_retro.png"
         alt="logo"
         width="0"
@@ -15,6 +14,10 @@ export default function Home() {
       />
       <div className="Main-content-info">
         <ImageFrame src="/myImageSmall.jpg" alt="my image" />
+      </div> */}
+      <div className="Main-content-info">
+        <ImageFrame src="/reading_dog_2.jpg" alt="dog_reading_2" />
+        <p className="flex justify-center">TBA...</p>
       </div>
     </div>
   );
